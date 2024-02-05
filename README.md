@@ -5,7 +5,7 @@
 # Curso: Maquetador web Avanzado  |  código 70713
 
 > Curso Maquetador web Avanzado |   
-> Martes y Jueves 10hs a 12hs (Arg) |  
+> Lunes y Miércoles 10hs a 13hs (Arg) |  
 > 10 clases desde 05/02 hasta 11/03  |  
 > Código: 70713 |  
 > sensei: Marcos Pinardi |

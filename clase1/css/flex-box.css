@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* evita el incremento debido al padding */
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e1a16;
+    color: #e1eee9;
+    /* p: #aed0c4 */
+    /* s: #3a5f65 */
+    width: 768px;
+    margin: auto;
+}
+
+h1, h2{
+    margin-top: 32px;
+}
+#contenedor,
+#contenedor2,
+#contenedor3
+{
+    margin-top: 24px;
+    background-color: #666;
+    height: 368px;
+}
+
+#contenedor{
+    display: flex;
+    /* justify-content: start; /* prederminado: a la izquierda */
+    /* justify-content: end; /* a la derecha */
+    /* justify-content: center;*/
+    /*#### espacio sobrante */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+
+#contenedor2{
+    display: flex;
+    /* align-items: start; /* predeterminado: arriba */
+    /* align-items: end; /* abajo */
+    align-items: center;
+}
+
+#contenedor3{
+    display: flex;
+    /* respetar los anchos de los elementos contenidos */
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+    article{
+        width: 156px;
+        height: 156px;
+        background-color: #88d0a7;
+        color: #213329;
+    }
