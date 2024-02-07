@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    padding-top: 64px;
+    background-color: #2c0022;
+    width: 768px;
+    margin: auto;
+    color: white;
+}
+#contenedor{
+    background-color: #909090;
+    height: 600px;
+    display: flex;
+    flex-direction: column; /* invirte los ejes */
+    align-items: center;/* deja de ser eje y */
+    justify-content: space-between;
+}
+    #contenedor article
+    {
+        width: 156px;
+        height: 156px;
+        background-color: #da2edf;
+    }
+    

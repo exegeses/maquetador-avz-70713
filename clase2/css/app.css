@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+}
+/* globales */
+    a{
+        text-decoration: none;
+    }
+
+header{
+    background: rgb(229,139,185);
+    background: linear-gradient(90deg, rgba(229,139,185,1) 0%, rgba(206,184,245,1) 100%);
+}
+    #top-container{
+        height: 104px;
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
