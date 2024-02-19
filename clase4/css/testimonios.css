@@ -16,6 +16,7 @@ main{
     width: 1200px;
     margin: auto;
     background-color: #D8F0E2;
+    transition: 500ms;
 }
     #testimonios{
         padding: 48px 32px;
@@ -25,6 +26,7 @@ main{
         /* column-gap: 34px;
         row-gap: 48px; */
         gap: 48px 34px;
+        transition: 500ms;
     }
         #testimonios article{
             background-color: #fff;
@@ -32,6 +34,7 @@ main{
             border-radius: 8px;
             padding: 24px 20px;
             text-align: center;
+            transition: 500ms;
         }
             #testimonios article img{
                 width: 128px;
