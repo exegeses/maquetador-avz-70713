@@ -1,0 +1,75 @@
+/*1920*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 24px;
+}
+body{
+    margin: 64px auto;
+    font-family: 'Figtree', sans-serif;
+    color: white;
+    background-color: #8c10c2;
+}
+body::before{
+    content: '1920px o más';
+    margin-left: 2rem;
+}
+@media (max-width: 1536px){
+    body{
+        background-color: #7a0da8;
+    }
+    body::before{
+        content: '1536px';
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 1440px){
+    body{
+        background-color: #670b8f;
+    }
+    body::before{
+        content: '1440px';
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 1280px){
+    body{
+        background-color: #550975;
+    }
+    body::before{
+        content: '1280px';
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 1024px){
+    body{
+        background-color: #42075c;
+    }
+    body::before{
+        content: '1024px';
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 768px){
+    body{
+        background-color: #300542;
+    }
+    body::before{
+        content: '768px';
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width: 640px){
+    body{
+        background-color: #1e032a;   
+    }
+    body::before{
+        content: '640px';
+        margin-left: 2rem;
+    }
+}
+

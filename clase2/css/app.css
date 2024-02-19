@@ -24,3 +24,106 @@ header{
         justify-content: space-between;
         align-items: center;
     }
+        #top-container a{
+            color: #fff;
+            font-size: 24px;
+        }
+        #top-container a img{
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+/* navegación */
+        #top-container nav a{
+            font-size: 20px;
+            padding: 8px;
+        }
+        #top-container nav a:hover{
+            text-shadow: 0 0 8px rgb(229,139,185);
+        }
+/* hero banner */
+    #hero{
+        width: 1200px;
+        margin: auto;
+        height: 652px;
+        padding-top: 56px;
+        padding-bottom: 76px;
+        display: flex;
+    }
+        #hero article{
+            width: 752px;
+            height: 520px;
+            display: flex;
+            flex-direction: column; /* invierte los ejes */
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+            #hero article h1{
+                width: 600px;
+                font-size: 32px;
+                font-weight: 400;
+            }
+            #hero article p{
+                width: 600px;
+                margin: 32px 0px 40px 0px;
+            }
+            #hero div{
+                width: 600px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+                #hero div a{
+                    color: #fff;
+                    padding: 10px 16px;
+                    border: 2px solid #fff;
+                    border-radius: 40px;
+                    transition: 500ms;
+                }
+                #hero div a:hover{
+                    background-color: #fff;
+                    color: rgb(229,139,185);
+                }
+                #hero div a span{
+                    position: relative;
+                    top: -3px;
+                }
+                .fa-brands{
+                    font-style: normal;
+                    font-size: 24px;
+                    margin-right: 8px;
+                }
+
+        #hero img{
+            margin-left: 96px;
+        }
+
+/* main */
+main{
+    width: 1200px;
+    margin: auto;
+    min-height: 576px;
+}
+
+    #features{
+        margin-top: 40px;
+        padding: 40px 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+        #features article{
+            text-align: center;
+        }
+            #features article h2{
+                margin: 24px 0px 16px 0px;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+
+/* footer */
+footer{
+    width: 1200px;
+    height: 156px;
+    margin: 56px auto 0px auto;
+    background-color: #3c3c3c;
+}

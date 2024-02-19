@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 32px;
+}
+body{
+    width: 768px;
+    margin: 64px auto;
+    font-family: 'Figtree', sans-serif;
+    background-color: #2e043e;
+    color: #a00bd6;
+}
+#cita{
+    font-size: 1.5rem;
+}
+#cita::before{
+    content: '“';
+    font-size: 4rem;
+}
+    #cita span{
+        font-size: .5em;
+        display: block;
+        text-align: right;
+        margin: 1rem;
+    }
+    #cita span::after{
+        content: '→';
+    }

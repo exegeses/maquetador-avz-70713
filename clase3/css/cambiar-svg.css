@@ -1,0 +1,18 @@
+body{
+    width: 768px;
+    margin: auto;
+    padding-top: 64px;
+    background-color: #142716;
+    font-family: arial;
+    color: #fff;
+}
+    .imagen{
+        width: 156px;
+        margin: 32px;
+    }
+/* scalable vector graphics */
+    .imagen-svg{
+        width: 156px;
+        margin: 32px;
+        color: #d50;
+    }
