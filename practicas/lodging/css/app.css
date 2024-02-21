@@ -23,6 +23,10 @@ a{
     header a{
         color: #3c3c3c;
         font-size: 24px;
+        position: relative;
+        z-index: 10;
+        top: 16px;
+        left: 16px;
     }
     /* logo */
         header a img{
@@ -30,5 +34,49 @@ a{
             vertical-align: middle;
         }
     /* navegación */
+        header nav{
+            background-color: #fff;
+            padding-bottom: 16px;
+            /* desplegado translateY(32px) */
+            transform: translateY(-216px);
+            transition: .5s;
+        }
+        header nav a{
+            display: block;
+            text-align: center;
+            padding: 8px;
+        }
+        header span{
+            position: absolute;
+            top: 28px;
+            right: 24px;
+            cursor: pointer;
+        }
+            header span img{
+                width: 20px;
+            }
+        main{
+            width: 640px;
+            margin: auto;
+        }
+        #hero{
+            height: 604px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+            #hero article h1{
+                font-size: 44px;
 
+            }
+            #hero video{
+                position: absolute;
+                top: 0px;
+                z-index: -10;
+                width: 640px;
+                height: 604px;
+                object-fit: cover;
+            }
 }
