@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 768px;
+    margin: auto;
+    padding: 64px 0px;
+    font-family: Helvetica, arial;
+    font-weight: 300;
+}
+/* even -> pares  ||  odd -> impares */
+    #alternados p:nth-child( even ){
+        background-color: #ef9494;
+    }
+    #alternados p:nth-child( odd ){
+        background-color: #f8d6d6;
+    }
+        #alternados p {
+            margin: 16px 0px;
+            padding: 16px;
+            transition: .5s;
+        }
+        #alternados p:hover{
+            font-size: 1.02rem;
+            border: solid 2px #ef9494;;
+        }

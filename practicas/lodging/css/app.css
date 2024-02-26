@@ -94,10 +94,48 @@ main{
         height: 840px;
         object-fit: cover;
     }
+
+/* reviews */
+    #reviews{
+        width: 1200px;
+        height: 240px;
+        margin: 40px auto 0px auto;
+        display: flex;
+        align-items: center;
+        /*justify-content: space-around;*/
+        padding: 0 80px;
+        justify-content: space-between;
+    }
+        #reviews article{
+            width: 256px;
+            text-align: center;
+        }
+            #reviews article p{
+                margin: 24px 0px;
+            }
+/* vacancy */
+    #vacancy{
+        width: 1200px;
+        margin: auto;
+        height: 512px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        #vacancy article{
+            width: 512px;
+        }
+        #vacancy article:nth-child(1){
+            background-image: url(../imgs/lake-house.png);
+        }
+
 /*#####  1024  #####*/
 @media screen and ( max-width: 1024px ) {
     header{
         width: 1024px;
+    }
+    #reviews{
+        width: 1024px;
+        padding: 0 64px;
     }
 }
 /*#####  768  #####*/
@@ -147,7 +185,13 @@ main{
             width: 768px;
             height: 720px;
         }
-
+    #reviews{
+        width: 768px;
+        padding: 0 40px;
+    }
+        #reviews article{
+            width: 200px;
+        }
 }
 
 /*#####  640 #####*/
@@ -166,4 +210,12 @@ main{
                 width: 640px;
                 height: 604px;
             }
+
+    #reviews{
+        width: 640px;
+        height: 584px;
+        flex-direction: column;
+        padding: 40px;
+        row-gap: 56px;
+    }
 }
