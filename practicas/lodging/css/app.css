@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    overflow-x: clip;
+}
 body{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
@@ -14,26 +17,104 @@ body{
 a{
     text-decoration: none;
 }
-@media screen and ( max-width: 640px ){
+/*#####  1200  #####*/
+header{
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    header a{
+        color: #3c3c3c;
+        font-size: 24px;
+    }
+    /* logo */
+    header a img{
+        width: 48px;
+        vertical-align: middle;
+    }
+    header nav a{
+        padding: 8px;
+    }
+    header span{
+        display: none; /* oculta el hamburger */
+    }
+main{
+    width: 100%;
+    margin: auto;
+}
+    #hero{
+        height: 840px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+#hero article{
+    width: 528px;
+    text-align: center;
+}
+    #hero article h1{
+        font-weight: 600;
+        font-size: 44px;
+    }
+        #hero article p{
+            font-size: 20px;
+            margin: 32px 0px;
+        }
+        #hero article a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 280px;
+            margin: auto;
+            height: 72px;
+            border-radius: 16px;
+            border: 2px solid #fff;
+            color: #fff;
+            background-color: rgba(88, 106, 110, 0.5);
+            line-height: 72px;
+            transition: 500ms;
+        }
+        #hero article a:hover{
+            background-color: rgba(88, 106, 110, 0.7);
+        }
+        #hero article a img{
+            width: 48px;
+            margin-right: 16px;
+        }
+    #hero video{
+        position: absolute;
+        top: 0px;
+        z-index: -10;
+        width: 100%;
+        height: 840px;
+        object-fit: cover;
+    }
+/*#####  1024  #####*/
+@media screen and ( max-width: 1024px ) {
     header{
-        width: 640px;
+        width: 1024px;
+    }
+}
+/*#####  768  #####*/
+@media screen and ( max-width: 768px ){
+    header{
+        display: block; /* mover a 768 */
+        width: 768px;
         height: 80px;
         margin: auto;
     }
     header a{
-        color: #3c3c3c;
-        font-size: 24px;
         position: relative;
         z-index: 10;
         top: 16px;
         left: 16px;
     }
-    /* logo */
-        header a img{
-            width: 48px;
-            vertical-align: middle;
-        }
-    /* navegación */
+        /* navegación */
         header nav{
             background-color: #fff;
             padding-bottom: 16px;
@@ -47,36 +128,42 @@ a{
             padding: 8px;
         }
         header span{
+            display: inline-block;
             position: absolute;
             top: 28px;
             right: 24px;
             cursor: pointer;
         }
-            header span img{
-                width: 20px;
-            }
+        header span img{
+            width: 20px;
+        }
+        main{
+            width: 768px;
+        }
+        #hero{
+            height: 720px;
+        }
+        #hero video{
+            width: 768px;
+            height: 720px;
+        }
+
+}
+
+/*#####  640 #####*/
+@media screen and ( max-width: 640px ){
+    header{
+        display: block;
+        width: 640px;
+    }
         main{
             width: 640px;
-            margin: auto;
         }
         #hero{
             height: 604px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
         }
-            #hero article h1{
-                font-size: 44px;
-
-            }
             #hero video{
-                position: absolute;
-                top: 0px;
-                z-index: -10;
                 width: 640px;
                 height: 604px;
-                object-fit: cover;
             }
 }
