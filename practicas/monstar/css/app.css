@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    /* font-size: 16px; */
+}
+body{
+    font-family:'Barlow',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #273237;
+}
+a{
+    text-decoration: none;
+}
+
+/* 1200px */
+header{
+    width: 1200px;
+    height: 104px;
+    background-color: #273237;
+    margin: auto;
+}
+main{
+    width: 1200px;
+    margin: 32px auto;
+    padding: 40px;
+}
+/*# sección servicios #*/
+#servicios{
+    display: grid;
+    /* grid-template-columns: 346px 346px 346px;*/
+    /* grid-template-columns: repeat(3, 346px) */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+    #servicios article{
+        box-shadow: 4px 0px 8px #ccc;
+        border-radius: 8px;
+    }
+        .snap{
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+        }
+        #servicios article h2{
+            font-size: 20px;
+            font-weight: 400;
+        }
+footer{
+    width: 1200px;
+    height: 188px;
+    background-color: #273237;
+    margin: auto;
+}
+
+/*#####  1024px  #####*/
+@media ( max-width: 1024px ){
+    header{
+        width: 1024px;
+        height: 96px;
+    }
+    main{
+        width: 1024px;
+        margin: 24px auto;
+    }
+/*### sección servicios ###*/
+    #servicios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer{
+        width: 1024px;
+        height: 156px;
+    }
+}
+
+/*#####  768px  #####*/
+@media ( max-width: 768px ) {
+    header{
+        width: 768px;
+    }
+    main{
+        width: 768px;
+        margin: 24px auto;
+        padding: 0;
+    }
+/*### sección servicios ###*/
+    #servicios{
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+
+    footer{
+        width: 768px;
+        height: 132px;
+    }
+}
+/*#####  640px  #####*/
+@media (max-width: 640px) {
+    header{
+        width: 640px;
+    }
+    main{
+        width: 640px;
+    }
+    footer{
+        width: 640px;
+    }
+}
