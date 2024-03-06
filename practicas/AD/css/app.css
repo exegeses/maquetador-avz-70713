@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+:root{
+    /* declaración de variables */
+    --textos: #272D38;
+    --menu-hover: #f4f9fd;
+    --btn-blue: #04146C;
+    --btn-blue-hover: #0721b3;
+    --dark: #15163D;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    color: var(--textos);
+}
+/* globales */
+a{
+    text-decoration: none;
+}
+/*### 1400 ###*/
+header{
+    width: 1400px;
+    margin: auto;
+    height: 104px;
+    /*! menu responsive !!*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+}
+    /* navegación */
+    header nav a{
+        font-weight: 600;
+        font-size: 24px;
+        padding: 12px;
+        color: var(--textos);
+    }
+    header nav a:hover{
+        background-color: var(--menu-hover);
+    }
+    /* ocultamos hamburger */
+    header img[alt="menu"]{
+        display: none;
+    }
+main{
+    width: 1400px;
+    margin: auto;
+}
+    #about{
+        width: 1024px;
+        margin: auto;
+        text-align: center;
+        padding: 24px;
+    }
+        #about h2{
+            font-size: 48px;
+        }
+        #about h1{
+            margin: 24px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        #about a{
+            background-color: var(--btn-blue);
+            display: inline-block;
+            width: 200px;
+            padding: 12px;
+            color: #fff;
+            border-radius: 8px;
+            text-transform: uppercase;
+        }
+        #about a:hover{
+            background-color: var(--btn-blue-hover);
+        }
+    #branding,
+    #branding2
+    {
+        width: 1200px;
+        margin: 56px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    #branding2{
+        flex-direction: row-reverse;
+    }
+        #branding img,
+        #branding2 img
+        {
+            width: 600px;
+        }
+        #branding div,
+        #branding2 div
+        {
+            text-align: center;
+        }
+            #branding div h3,
+            #branding2 div h3
+            {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+    #branding3{
+        width: 1024px;
+        /* inline-block */
+        /* margin: 56px 188px;*/
+        /* block */
+        display: block;
+        margin: 56px auto 0px auto;
+    }
+
+/*### 768 ###*/
+/* @media ( 768px <= with <= 1023px ){} */
+@media(min-width:768px) and (max-width:1023px){
+    header{
+        width: 768px;
+        height: 48px;
+        /*! menu responsive !!*/
+        display: block;
+        padding: 0;
+    }
+    /* logo */
+    #logo{
+        position: absolute;
+        z-index: 10; /* para que pase sobre el menu desplegable */
+        top: 14px;
+        left: 12px;
+    }
+        #logo img{
+            width: 32px;
+        }
+        /* mostramos hamburger */
+        header img[alt="menu"]{
+            display: inline-block;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            cursor: pointer;
+        }
+    /* desplegable */
+    header nav{
+        /* transform: translateY(48px);*/
+        transform: translateY(-208px);
+        background-color: #fff;
+        transition: .5s;
+    }
+        header nav a{
+            display: block;
+            /* text-align: center; */
+        }
+    main{
+        width: 768px;
+    }
+        #about{
+            width: 768px;
+        }
+            #about h1{
+                margin: 32px;
+            }
+        #branding,
+        #branding2
+        {
+            margin-top: 52px;
+            width: 768px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+            #branding img,
+            #branding2 img
+            {
+                width: 768px;
+            }
+            #branding div,
+            #branding2 div{
+                margin-top: 24px;
+            }
+    #branding3{
+        width: 768px;
+    }
+}
