@@ -1,0 +1,126 @@
+/* variables de color */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #3c3c3c;
+}
+
+header {
+  background-color: #3c3c3c;
+}
+header div {
+  width: 1024px;
+  margin: auto;
+  height: 104px;
+}
+header div img {
+  width: 72px;
+  margin: 16px 32px;
+}
+
+main {
+  min-height: 500px;
+}
+
+#sassy {
+  width: 768px;
+  margin: 72px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#sassy div {
+  text-align: center;
+}
+#sassy div h2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+#sassy div h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#sassy img {
+  width: 260px;
+}
+
+#botones {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 32px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.btn-white {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #3c3c3c;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.btn-white:hover {
+  background-color: #e8e8e8;
+}
+
+.btn-orange {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #FA6400;
+  transition: 0.5s;
+}
+.btn-orange:hover {
+  color: #ff0;
+  background-color: #ff700e;
+}
+
+.btn-green {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #41B25C;
+  transition: 0.5s;
+}
+.btn-green:hover {
+  color: #fff;
+  background-color: #4bcc69;
+}
+
+.btn-blue {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #4F6BF8;
+  transition: 0.5s;
+}
+.btn-blue:hover {
+  color: #fff;
+  background-color: #5999fa;
+}
+
+footer {
+  background-color: #3c3c3c;
+}
+footer div {
+  width: 1024px;
+  margin: auto;
+  height: 160px;
+}
+footer div img {
+  width: 64px;
+  margin: 48px 32px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,29 @@
+/* variables de color */
+$texto: #3c3c3c;
+$fondo: $texto;
+$pink : #f06292;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "reset";
+body{
+  font-family: "Raleway", sans-serif;
+  color: $texto;
+}
+
+
+@import "header";
+
+main{
+  min-height: 500px;
+}
+
+@import "sassy";
+
+#botones{
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@import "botones";
+
+@import "footer";

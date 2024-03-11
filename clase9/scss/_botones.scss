@@ -1,0 +1,47 @@
+@mixin btn($radius)
+{
+  padding: 12px 32px;
+  border-radius: $radius;
+  margin: 8px;
+}
+@mixin color-btn( $color-texto, $color-fondo )
+{
+  color: $color-texto;
+  background-color: $color-fondo;
+}
+
+.btn{
+    @include btn( 8px );
+}
+.btn-white{
+    border: 1px solid rgba(0,0,0,0.2);
+    @include color-btn($texto, #fff);
+    transition: .5s;
+    &:hover{
+      background-color: #e8e8e8;
+    }
+}
+.btn-orange{
+    border: 1px solid rgba(0,0,0,0.2);
+    @include color-btn( #fff, #FA6400 );
+    transition: .5s;
+    &:hover{
+      @include color-btn( #ff0, #ff700e);
+    }
+}
+.btn-green{
+  border: 1px solid rgba(0,0,0,0.2);
+    @include color-btn(#fff, #41B25C );
+  transition: .5s;
+    &:hover{
+      @include color-btn(#fff, #4bcc69);
+    }
+}
+.btn-blue{
+  border: 1px solid rgba(0,0,0,0.2);
+    @include color-btn(#fff, #4F6BF8 );
+  transition: .5s;
+    &:hover{
+      @include color-btn(#fff, #5999fa);
+    }
+}
