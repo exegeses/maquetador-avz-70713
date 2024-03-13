@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #353538;
+    font-family: Helvetica Neue;
+    color: #E9DABB;
+}
+h1{
+    font-weight: 300;
+    text-align: center;
+}
+header{
+    width: 780px;
+    height: 366px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+    header img{
+        position: absolute;
+    }
+    #logo{
+        position: relative;
+        width: 112px;
+        /*top: calc(366px /2);*/
+    }
+
+    #c1{
+        animation: rotar 30s infinite;
+    }
+    #c2{
+        animation: rotar 40s infinite;
+    }
+    #c3{
+        animation: rotar 50s infinite;
+    }
+    #c4{
+        animation: rotar 60s infinite;
+    }
+    #c5{
+        animation: rotar 70s infinite;
+    }
+    #c6{
+        animation: rotar 80s infinite;
+    }
+    #c7{
+        animation: rotar 90s infinite;
+    }
+    #c8{
+        animation: rotar 120s infinite;
+    }
+    #c9{
+        animation: rotar 140s infinite;
+    }
+    #c10{
+        animation: rotar 160s infinite;
+    }
+
+
+@keyframes rotar {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}

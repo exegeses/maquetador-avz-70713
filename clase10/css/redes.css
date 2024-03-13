@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 640px;
+    margin: 80px auto;
+}
+.secciones{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* estado inicial */
+     /* opacity: 0%;*/
+    /* aplicamoa animación */
+    /*
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards; /* para que no vuelva a comenzar */
+}
+    .secciones img{
+        width: 56px;
+    }
+#insta{
+    opacity: 0%;
+    /* animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;*/
+    animation: fade-in 1.5s forwards;
+}
+#face{
+    opacity: 0%;
+    animation: fade-in 1.5s 750ms forwards;
+}
+#twit{
+    opacity: 0%;
+    animation: fade-in 1.5s 1.5s forwards;
+}
+#link{
+    opacity: 0%;
+    animation: fade-in 1.5s 2.25s forwards;
+}
+#reddit{
+    /* animation: zoom-out 4s;*/
+    opacity: 0%;
+    animation: zoom-out 4s 3s,
+               fade-in 4s 3s forwards;
+}
+#tube{
+    animation: rotar 2s linear infinite;
+}
+
+/* declaración de animaciones */
+/* @keyframes nombre */
+@keyframes fade-in {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes zoom-out {
+    /*from{}
+    to{}*/
+    0%{
+        transform: scale(6);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes rotar {
+    0%{
+        /* transform: rotate(0deg); */
+        rotate: 0deg;
+    }
+    100%{
+        /* transform: rotate(360deg); */
+        rotate: 360deg;
+    }
+}

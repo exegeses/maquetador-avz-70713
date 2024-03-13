@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #323b32;
+    color: #b4f9b4;
+    font-family: "Fira Sans";
+    font-weight: 300;
+    font-size: 1.2em;
+}
+main{
+    width: 1024px;
+    margin: 64px auto;
+}
+    #fotos{
+        /* display: grid;
+        grid-template-columns: repeat(3, 1fr);*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+        #fotos article{
+            width: 340px;
+            position: relative;
+        }
+        #fotos article:hover::before,
+        #fotos article:hover h2,
+        #fotos article:hover p
+        {
+            opacity: 100%; /* opacity: 1; */
+        }
+        #fotos article::before{
+            position: absolute;
+            top: 40px;
+            content: '';
+            width: 100%;
+            height: 60%;
+            /* linear-gradient( direccion, color inicio, color fin ) */
+            background: linear-gradient(
+                            to bottom,
+                            rgba( 0, 0, 0, 0% ) 0%,
+                            rgba( 0, 0, 0, 70% ) 100%
+                        );
+            opacity: 0%; /* opacity: 0; */
+            transition: 300ms;
+        }
+            #fotos article img {
+                width: 100%;
+            }
+            #fotos article:hover h2{
+                transform: translateY(-104px);
+            }
+            #fotos article:hover p{
+                transform: translateY(-96px);
+            }
+            #fotos article h2{
+                transition: 300ms;
+                transform: translateY(0px);
+                opacity: 0%;
+                padding-left: 16px;
+            }
+            #fotos article p{
+                transition: 300ms 100ms;
+                transform: translateY(0px);
+                opacity: 0%;
+                padding-left: 16px;
+            }
